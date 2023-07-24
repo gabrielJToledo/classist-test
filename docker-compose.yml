@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  backend:
+    image: backend-netflix-app
+    ports:
+      - "5000:5000"
+    environment:
+      MONGO_URL: mongodb+srv://gabrieljtoledouni:ne43hOPr01M1cO23@netflix-app.nhmsqkc.mongodb.net/netComments?retryWrites=true&w=majority
+      BACKEND_PORT: 5000
+      AUTH_SECRET: asdflkasdopfkopasdkf#$$@#$dsaolifjasoid
+    command: npm start

@@ -1,0 +1,71 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: starWars;
+  src: url('./assets/fonts/strjmono.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.starWarsFont {
+  font-family: starWars;
+}
+
+body {
+  margin: 0;
+}
+
+.app {
+  background-color: #f7f7f7;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #28a5de;
+}
+
+.blink-32 {
+  -webkit-animation: blink-1 5s infinite both;
+  animation: blink-1 5s infinite both;
+}
+
+@-webkit-keyframes blink-1 {
+
+  0%,
+  50%,
+  100% {
+      opacity: 1;
+  }
+
+  25%,
+  75% {
+      opacity: 0;
+  }
+}
+
+@keyframes blink-1 {
+
+  0%,
+  50%,
+  100% {
+      opacity: 1;
+  }
+
+  25%,
+  75% {
+      opacity: 0;
+  }
+}
